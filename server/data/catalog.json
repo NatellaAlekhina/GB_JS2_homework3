@@ -1,0 +1,22 @@
+[
+    {"id":1,"title":"Jacket green","price":687},
+    {"id":2,"title":"Shoes orange","price":794},
+    {"id":3,"title":"Jacket green","price":346},
+    {"id":4,"title":"Jacket orange","price":143},
+    {"id":5,"title":"Shoes green","price":210},
+    {"id":6,"title":"Shirt orange","price":222},
+    {"id":7,"title":"Shirt orange","price":981},
+    {"id":8,"title":"Shirt red","price":829},
+    {"id":9,"title":"Hat orange","price":137},
+    {"id":10,"title":"Hat red","price":744},
+    {"id":11,"title":"Shoes red","price":705},
+    {"id":12,"title":"Shoes green","price":817},
+    {"id":13,"title":"Shoes white","price":439},
+    {"id":14,"title":"Hat orange","price":813},
+    {"id":15,"title":"Shirt white","price":984},
+    {"id":16,"title":"Shirt orange","price":482},
+    {"id":17,"title":"Socks green","price":636},
+    {"id":18,"title":"Socks white","price":389},
+    {"id":19,"title":"Jacket white","price":922},
+    {"id":20,"title":"Shoes white","price":883}
+]

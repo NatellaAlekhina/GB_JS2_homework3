@@ -4,7 +4,7 @@ const renderGoodsItem = ({ title, price }) => {
   return `<div class="goods-item"><h3>${title}</h3><p>${price} $</p></div>`;
 };
 
-class renderGoodsItem2 {
+/*class renderGoodsItem2 {
   constructor ({ title, price }){
     this.title = title;
     this.price = price;
@@ -29,7 +29,7 @@ class renderGoodsList2 {
     });
     document.querySelector(".goods-list").innerHTML = _goodsItems.join("");
   }
-}
+}*/
 
 
 
@@ -43,12 +43,12 @@ const renderGoodsList = (list) => {
   $showcase.insertAdjacentHTML('beforeend', goodsList);
 }
 
-onload = () => {
+/*onload = () => {
   const goodsList = new renderGoodsList2;
   goodsList.render();
-}
+}*/
 
-class Cart {
+/*class Cart {
   show () {}
   render () {}
 }
@@ -57,6 +57,6 @@ class CartItem {
   setCount () {}
   deleteItem() {}
   render () {}
-}
+}*/
 
 export default renderGoodsList

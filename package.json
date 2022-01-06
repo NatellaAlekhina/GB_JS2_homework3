@@ -12,7 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "css-loader": "^6.5.1",
+    "export": "^0.1.337",
     "express": "^4.17.2",
+    "fs": "0.0.1-security",
     "lodash": "^4.17.21",
     "mini-css-extract-plugin": "^2.4.5",
     "postcss": "^8.4.5",

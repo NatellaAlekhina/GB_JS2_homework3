@@ -31,8 +31,8 @@ module.exports = {  //экспорт модулей для других файл
         }),
         new CopyPlugin({
             patterns: [
-              { from: "/home/nataly/Рабочий стол/geek-brains/Курс 4 - JS 2 уровень/Вне урока/JS_shop_handmade_урок 2/src/style",
-              to: "/home/nataly/Рабочий стол/geek-brains/Курс 4 - JS 2 уровень/Вне урока/JS_shop_handmade_урок 2/dist" }
+              { from: "/home/nataly/Рабочий стол/geek-brains/Курс 4 - JS 2 уровень/Вне урока/JS_shop_handmade_урок 3/src/style",
+              to: "/home/nataly/Рабочий стол/geek-brains/Курс 4 - JS 2 уровень/Вне урока/JS_shop_handmade_урок 3/dist" }
            ],
           }),
         
