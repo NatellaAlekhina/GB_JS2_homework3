@@ -48,4 +48,15 @@ onload = () => {
   goodsList.render();
 }
 
+class Cart {
+  show () {}
+  render () {}
+}
+
+class CartItem {
+  setCount () {}
+  deleteItem() {}
+  render () {}
+}
+
 export default renderGoodsList
