@@ -27,3 +27,9 @@ var buyed = {id:1,title:"Jacket green",price:687};
 send((err) => { console.log(err) }, (res) => {
   cart.push(buyed)
 }, `${API_URL}/cart`,'POST', JSON.stringify(buyed), {"Content-Type": "application/json"})
+
+// Пользователь удаляет товар в корзину
+
+send((err) => { console.log(err) }, (res) => {
+  cart.pop()
+}, `${API_URL}/cart`,'DELETE', JSON.stringify(buyed), {"Content-Type": "application/json"})
