@@ -1,4 +1,4 @@
-export function send(onError, onSuccess, url, method = 'GET', data = '', headers = {}, timeout = 60000) {
+ function send(onError, onSuccess, url, method = 'GET', data = '', headers = {}, timeout = 60000) {
  
     let xhr;
 
@@ -10,11 +10,8 @@ export function send(onError, onSuccess, url, method = 'GET', data = '', headers
       xhr = new ActiveXObject("Microsoft.XMLHTTP");
     }
 
-    console.log("xhr");
 
-    for([key, value] of Object.entries(headers)) {
-      xhr.setRequestHeader(key, value)
-    }
+    
 
     xhr.timeout = timeout; 
 
@@ -36,5 +33,11 @@ export function send(onError, onSuccess, url, method = 'GET', data = '', headers
       xhr.setRequestHeader(key, value)
     }*/
 
+    for(let [key, value] of Object.entries(headers)) {
+      xhr.setRequestHeader(key, value)
+    }
+
     xhr.send(data);
 }
+
+export default send

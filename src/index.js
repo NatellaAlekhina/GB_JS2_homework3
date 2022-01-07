@@ -8,18 +8,13 @@ import renderGoodsList from "./showcase.js";
 import send from './utils.js';
 import css from "./style/main.css";
 const API_URL = "http://localhost:3000/api/v1";
-
-
-//const productList = getProductList(20);
-//const productList = getProductList(20);
-//renderGoodsList(productList);
-
-//const API_URL = 'http://localhost:3000/api/v1'
+//import js from '../server/index.js'
 
 let productList = [];
+
 let cart = [];
 
-send((error) => { console.log(err) }, (res) => { 
+send((err) => { console.log(err) }, (res) => { 
   let list = JSON.parse(res);
   productList = list;
   renderGoodsList(productList);
@@ -28,7 +23,7 @@ send((error) => { console.log(err) }, (res) => {
 
 
 // Пользователь добавляет товар в корзину
-let buyed = {id:1,title:"Jacket green",price:687};
-send((error) => { console.log(err) }, (res) => {
+var buyed = {id:1,title:"Jacket green",price:687};
+send((err) => { console.log(err) }, (res) => {
   cart.push(buyed)
-}, `${API_URL}/cart`, 'POST', JSON.stringify(buyed), {"Content-Type": "application/json"})
+}, `${API_URL}/cart`,'POST', JSON.stringify(buyed), {"Content-Type": "application/json"})
